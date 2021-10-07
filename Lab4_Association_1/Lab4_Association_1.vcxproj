@@ -140,10 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Avto.cpp" />
+    <ClCompile Include="Koleso.cpp" />
     <ClCompile Include="Lab4_Association_1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Avto.h" />
+    <ClInclude Include="Koleso.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
