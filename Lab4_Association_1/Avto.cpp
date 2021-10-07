@@ -54,6 +54,7 @@ void Avto::prosmotr_avto()
     }
 }
 
+
 void Avto::avto_otv()
 {
     if (Avto::har1.obchee_get() == 1)
