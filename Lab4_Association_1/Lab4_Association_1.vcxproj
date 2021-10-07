@@ -143,12 +143,14 @@
     <ClCompile Include="Koleso.cpp" />
     <ClCompile Include="Lab4_Association_1.cpp" />
     <ClCompile Include="Motor.cpp" />
+    <ClCompile Include="Obchee.cpp" />
     <ClCompile Include="Voditel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Avto.h" />
     <ClInclude Include="Koleso.h" />
     <ClInclude Include="Motor.h" />
+    <ClInclude Include="Obchee.h" />
     <ClInclude Include="Voditel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
