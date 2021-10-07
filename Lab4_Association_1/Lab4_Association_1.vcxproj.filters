@@ -24,12 +24,18 @@
     <ClCompile Include="Koleso.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Voditel.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Avto.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Koleso.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Voditel.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
