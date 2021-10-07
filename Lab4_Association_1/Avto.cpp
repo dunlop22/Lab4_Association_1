@@ -22,17 +22,20 @@ void Avto::new_avto(Motor har2_1, Obchee har1_1, Korobka har4_1, Koleso har3_1)
     }
 }
 
-void Avto::vod_avto(Voditel vod_1)
+
+
+//функция привязки водителя к автомобилю через асссоциацию
+void Avto::vod_avto(Voditel *vod_1)
 {
-    if (Avto::har1.obchee_get() == 1 && vod_1.voditel_get() == 1)
+    if (Avto::har1.obchee_get() == 1 && (*vod_1).voditel_get() == 1)
     {
-        vod = vod_1;
-        cout << "Водитель успешно привязан";
+        vod = *vod_1;   
     }
     else
     {
         cout << "Информация об автомобиле или водителе не найдена";
     }
+
 }
 
 void Avto::prosmotr_avto()
@@ -66,6 +69,7 @@ void Avto::avto_otv()
     {
         cout << "Информация об автомобиле не найдена";
     }
+    
 }
 
 int Avto::avto_get()

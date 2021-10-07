@@ -15,7 +15,7 @@ class Avto
 public:
 	Avto();
 	void new_avto(Motor har2_1, Obchee har1_1, Korobka har4_1, Koleso har3_1);
-	void vod_avto(Voditel vod_1);
+	void vod_avto(Voditel *vod_1);
 	void prosmotr_avto();
 	void avto_otv();
 	int avto_get();

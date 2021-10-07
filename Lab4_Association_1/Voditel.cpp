@@ -10,6 +10,7 @@ Voditel::Voditel()
 	name[0] = '\0';
 	pol[0] = '\0';
 	covid_19[0] = '\0';
+	name_avto[0] = '\0';
 }
 
 void Voditel::new_voditel(double age_1, double stag_1, char name_1[20], char pol_1[20], char covid_19_1[20])
@@ -69,7 +70,14 @@ void Voditel::prosmotr_voditel()
 		cout << "\nВозраст: " << age;
 		cout << "\nПол: " << pol;
 		cout << "\nСтатус Covid-19: " << covid_19;
-		cout << "\nСтаж: " << stag << "\n***************************************\n\n";
+		cout << "\nСтаж: " << stag;
+		if (obchie.obchee_get() == 1)
+		{
+			cout << "\n\nОбщая информация об автомобиле:\n";
+			obchie.prosmotr_obchee();
+		}
+		cout << "\n***************************************\n\n";
+
 	}
 	else
 	{
@@ -93,6 +101,16 @@ void Voditel::voditel_covid()
 	{
 		cout << "Информация о водителе отсутствует";
 	}
+}
+
+void Voditel::voditel_avto_priv(Obchee* obchie)
+{
+	this->obchie = *obchie;
+}
+
+void Voditel::voditel_avto_otv()
+{
+	Voditel::obchie.Obchee::Obchee();
 }
 
 int Voditel::voditel_get()

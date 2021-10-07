@@ -250,7 +250,7 @@ int main()
 						if (podmenu == '1')
 						{
 							system("cls");
-							Avt1.vod_avto(Avd1);
+							Avt1.vod_avto(&Avd1);
 
 						}
 						else if (podmenu == '2')
@@ -276,7 +276,7 @@ int main()
 			do
 			{
 				system("cls");
-				cout << "1) Добавление информации о водителе\n2) Просмотр информации о водителе\n3) Изменение состояния у водителя\n\nESC - Возврат в меню";
+				cout << "1) Добавление информации о водителе\n2) Просмотр информации о водителе\n3) Изменение состояния у водителя\n4) Привязка авто к водителю\n\nESC - Возврат в меню";
 				podmenu = _getch();
 				if (podmenu == '1')
 				{
@@ -293,7 +293,7 @@ int main()
 					}
 					else
 					{
-						char name[50] = "Иванов .И.";
+						char name[50] = "Иванов И.И.";
 						char pol[20] = "М";
 						char covid_19[20] = "Переболел";
 						Avd1.new_voditel(25, 2, name, pol, covid_19);
@@ -313,6 +313,22 @@ int main()
 					cout << "\n\nНажмите любую клавишу для возврата в основное меню.";
 					_getch();
 				}
+				else if (podmenu == '4')
+				{
+					system("cls");
+					if (Avd1.voditel_get() == 1 && Avt1.avto_get() == 1)
+					{
+						Avd1.voditel_avto_priv(&Obchie);
+						cout << "Автомобиль успешно привязан к водителю";
+					}
+					else
+					{
+						cout << "Информация об автомобиле или водителе не найдена. Привязка невозможна!";
+					}
+					cout << "\n\nНажите любую клавишу для возврата в меню";
+					_getch();
+				}
+
 			} while (podmenu != 27);
 		}
 		else if (glmenu == '7')
