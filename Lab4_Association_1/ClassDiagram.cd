@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Koleso">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAQBAQBACAAAAAQAQAQAAIIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Koleso.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Avto">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <AssociationLine Name="har1" Type="Obchee" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.625" Y="2.757" />
+        <Point X="3.481" Y="2.757" />
+        <Point X="3.745" Y="2.834" />
+        <Point X="3.565" Y="2.834" />
+        <Point X="3.565" Y="2.99" />
+        <Point X="2.959" Y="2.99" />
+        <Point X="2.959" Y="4.094" />
+        <Point X="2" Y="4.094" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="vod" Type="Voditel" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="2.625" />
+        <Point X="5.125" Y="2.625" />
+        <Point X="5.125" Y="5.778" />
+        <Point X="5.5" Y="5.778" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAEAAAEACAAAAAAIF0AAgAABAAAAAA=</HashCode>
+      <FileName>Avto.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="har1" />
+      <Field Name="har3" />
+      <Field Name="vod" />
+      <Field Name="har4" />
+      <Field Name="har2" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Voditel">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAEAAAQAABCQAAEIAAAAQECAAAAAAAAAAAMQA=</HashCode>
+      <FileName>Voditel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Obchee">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAMAQkAAABAAAAAAAABAAAAEAAAEABgAAACAACA=</HashCode>
+      <FileName>Obchee.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Motor">
+    <Position X="3.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAACAAAAAAAAAAACAJEgAAAQAAABgAEABA=</HashCode>
+      <FileName>Motor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Korobka">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAwQAAAAAAAAAAQAAAAAQAAAAAAAAAAAACAAAAAQAA=</HashCode>
+      <FileName>Korobka.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

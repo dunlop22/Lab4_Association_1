@@ -78,7 +78,7 @@ void Koleso::koleso_diamter()
 	if (visota >= 0)
 	{
 		double diametr;
-		cout << "Введите новый диаметр колеса (может быть отрицательным): ";
+		cout << "Введите новый диаметр колеса: ";
 		while (scanf("%lf", &diametr) != 1 || diametr < 0)
 		{
 			printf("Неверно введено значение диаметра, попробуйте еще: ");
